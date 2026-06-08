@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using OnePieceNeu.Views;
 using System.Windows.Input;
 
 namespace OnePieceNeu.Viewmodels
@@ -31,15 +31,16 @@ namespace OnePieceNeu.Viewmodels
 
         private void Zurück()
         {
-            _mainViewModel.Navigation(new StartView(_mainViewModel));
+            _mainViewModel.CurrentView = new StartView(_mainViewModel);
         }
+
         private void Weiter()
         {
             string gewaehlteSchwierigkeit = "Leicht";
             if (IsMittelSelected) gewaehlteSchwierigkeit = "Mittel";
             if (IsSchwerSelected) gewaehlteSchwierigkeit = "Schwer";
 
-            _mainViewModel.Navigation(new QuizView(_mainViewModel, gewaehlteSchwierigkeit));
+            _mainViewModel.CurrentView = new QuizView(_mainViewModel, gewaehlteSchwierigkeit);
         }
     }
 }

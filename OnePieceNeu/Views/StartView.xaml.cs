@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OnePieceNeu.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,14 +16,12 @@ using System.Windows.Shapes;
 
 namespace OnePieceNeu.Views
 {
-    /// <summary>
-    /// Interaktionslogik für StartView.xaml
-    /// </summary>
     public partial class StartView : UserControl
     {
-        public StartView()
+        public StartView(MainViewModel mainViewModel)
         {
-            InitializeComponent();
+            this.InitializeComponent();
+            this.DataContext = new StartViewModel(mainViewModel);
         }
     }
 }

@@ -27,10 +27,11 @@ namespace OnePieceNeu.ViewModels
 
         private void Starten()
         {
-            MessageBox.Show("Start geklickt! Im nächsten Schritt lassen wir hier die Ansicht wechseln.");
+
         }
 
         private void Beenden()
+        { 
 
             Application.Current.Shutdown();
         }

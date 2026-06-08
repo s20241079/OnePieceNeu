@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using OnePieceNeu.ViewModels;
+using OnePieceNeu.Views;
 
 namespace OnePieceNeu.Views
 {
@@ -20,9 +22,10 @@ namespace OnePieceNeu.Views
     /// </summary>
     public partial class QuizView : UserControl
     {
-        public QuizView()
+        public QuizView(MainViewModel mainViewModel, string schwierigkeit)
         {
-            InitializeComponent();
+            this.InitializeComponent();
+            this.DataContext = new QuizViewModel(mainViewModel, schwierigkeit);
         }
     }
 }
