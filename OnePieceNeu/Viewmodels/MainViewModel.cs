@@ -24,7 +24,7 @@ namespace OnePieceNeu.ViewModels
 
         public MainViewModel()
         {
-            CurrentView = new StartView();
+            CurrentView = new StartView(this);
         }
     }
 }
