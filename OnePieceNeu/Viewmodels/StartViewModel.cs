@@ -21,20 +21,17 @@ namespace OnePieceNeu.ViewModels
         {
             _mainViewModel = mainViewModel;
 
-            // Wir übergeben: 1. Die Methode und 2. Ein 'true', damit der Button immer aktiv ist
             StartenCommand = new Common.ActionCommand(o => Starten(), o => true);
             BeendenCommand = new Common.ActionCommand(o => Beenden(), o => true);
         }
 
         private void Starten()
         {
-            // Test-Lebenszeichen
             MessageBox.Show("Start geklickt! Im nächsten Schritt lassen wir hier die Ansicht wechseln.");
         }
 
         private void Beenden()
-        {
-            // Schließt die gesamte Anwendung sauber
+
             Application.Current.Shutdown();
         }
     }

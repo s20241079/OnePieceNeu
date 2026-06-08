@@ -8,25 +8,22 @@ using System.Threading.Tasks;
 
 namespace OnePieceNeu.ViewModels
 {
-    public class MainViewModel : NotifyPropertyChanged // Erbt von deiner common-Klasse
+    public class MainViewModel : NotifyPropertyChanged
     {
         private object _currentView;
 
-        // Das ist das Gegenstück zum Binding im XAML
         public object CurrentView
         {
             get => _currentView;
             set
             {
                 _currentView = value;
-                // Ruft die Methode aus deiner NotifyPropertyChanged-Klasse auf
-                OnPropertyChanged();
+                OnPropertyChanged("CurrentView");
             }
         }
 
         public MainViewModel()
         {
-            // Wenn die App startet, laden wir direkt die StartView in das Fenster
             CurrentView = new StartView();
         }
     }

@@ -6,7 +6,11 @@
              xmlns:local="clr-namespace:OnePieceNeu.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
-    </Grid>
+
+    <StackPanel>
+        <TextBox Name="Header" Text="One Piece Quiz" BorderBrush="Transparent" Foreground="DarkRed" FontSize="50" FontWeight="Bold" TextAlignment="Center" Width="800" Height="104" HorizontalAlignment="Center" Background="Transparent" />
+        <Button Command="{Binding StartenCommand}" Content="Start" FontWeight="DemiBold" BorderBrush="DarkRed" Background="#FFF1F19F" Foreground="DarkRed" FontSize="30" Margin="0,0,0,30" Height="70" Width="200"> </Button>
+        <Button Command="{Binding BeendenCommand}" Content="Beenden" FontWeight="DemiBold" BorderBrush="DarkRed" Background="#FFF1F19F" Foreground="DarkRed" FontSize="30" Margin="0,0,0,30" Height="70" Width="200"> </Button>
+    </StackPanel>
+
 </UserControl>
