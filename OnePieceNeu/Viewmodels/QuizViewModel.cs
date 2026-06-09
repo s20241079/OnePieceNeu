@@ -18,6 +18,10 @@ namespace OnePieceNeu.ViewModels
         private int _aktuelleFrageIndex = 0;
         private Frage _aktuelleFrage;
 
+        private const string StandardGelb = "#FFF1F19F";
+
+        private bool _istEingabeGesperrt = false;
+
         public string AktuellerFragentext
         {
             get => _aktuelleFrage?.Fragentext;
@@ -51,6 +55,34 @@ namespace OnePieceNeu.ViewModels
             set { _antwortD = value; OnPropertyChanged(); }
         }
 
+        private string _hintergrundA = StandardGelb;
+        public string HintergrundA
+        {
+            get => _hintergrundA;
+            set { _hintergrundA = value; OnPropertyChanged(); }
+        }
+
+        private string _hintergrundB = StandardGelb;
+        public string HintergrundB
+        {
+            get => _hintergrundB;
+            set { _hintergrundB = value; OnPropertyChanged(); }
+        }
+
+        private string _hintergrundC = StandardGelb;
+        public string HintergrundC
+        {
+            get => _hintergrundC;
+            set { _hintergrundC = value; OnPropertyChanged(); }
+        }
+
+        private string _hintergrundD = StandardGelb;
+        public string HintergrundD
+        {
+            get => _hintergrundD;
+            set { _hintergrundD = value; OnPropertyChanged(); }
+        }
+
         public ICommand AntwortAuswaehlenCommand { get; }
         public ICommand BeendenCommand { get; }
 
@@ -69,19 +101,6 @@ namespace OnePieceNeu.ViewModels
         {
             using (var db = new QuizContext())
             {
-                // DIAGNOSE: Wie viele Fragen sind INSGESAMT in der DB?
-                int gesamtAnzahl = db.Fragen.Count();
-                if (gesamtAnzahl == 0)
-                {
-                    System.Windows.MessageBox.Show(
-                        "Deine SQLite-Datenbank ist komplett LEER! Der Import aus der fragen.txt hat nicht geklappt.",
-                        "Datenbank leer",
-                        System.Windows.MessageBoxButton.OK,
-                        System.Windows.MessageBoxImage.Error);
-                    return;
-                }
-                // Wir trimmen die Auswahl und machen sie zu Kleinbuchstaben,
-                // damit "Leicht", "leicht " oder "LEICHT" alle perfekt matchen!
                 string gesuchteSchwierigkeit = _schwierigkeitsgrad.Trim().ToLower();
 
                 _gefilterteFragen = db.Fragen
@@ -89,23 +108,9 @@ namespace OnePieceNeu.ViewModels
                     .ToList();
             }
 
-            // Wenn die Liste leer ist, zeigen wir eine Warnung an, damit du weißt, was los ist
-            if (_gefilterteFragen == null || _gefilterteFragen.Count == 0)
-            {
-                System.Windows.MessageBox.Show(
-                    $"Datenbank-Fehler:\nEs wurden keine Fragen für die Schwierigkeit '{_schwierigkeitsgrad}' in der SQLite-Datenbank gefunden.\n\nPrüfe, ob das Wort exakt so in deiner fragen.txt steht!",
-                    "Keine Daten",
-                    System.Windows.MessageBoxButton.OK,
-                    System.Windows.MessageBoxImage.Warning);
-                Beenden();
-                return;
-            }
-
-            // Fragen zufällig durchmischen
             Random rnd = new Random();
             _gefilterteFragen = _gefilterteFragen.OrderBy(f => rnd.Next()).ToList();
 
-            // Erste Frage aktivieren
             _aktuelleFrageIndex = 0;
             ZeigeAktuelleFrage();
         }
@@ -122,26 +127,46 @@ namespace OnePieceNeu.ViewModels
                 AntwortC = _aktuelleFrage.AntwortC;
                 AntwortD = _aktuelleFrage.AntwortD;
             }
-         
         }
 
-        private void AntwortGeklickt(object buchstabe)
+        private async void AntwortGeklickt(object buchstabe)
         {
-            if (_aktuelleFrage == null || buchstabe == null) return;
+            if (_aktuelleFrage == null || buchstabe == null || _istEingabeGesperrt) return;
+
+            _istEingabeGesperrt = true;
 
             string gewaehlterBuchstabe = buchstabe.ToString().ToUpper();
+            string richtigeAntwort = _aktuelleFrage.KorrekteAntwort.ToUpper();
 
-            if (gewaehlterBuchstabe == _aktuelleFrage.KorrekteAntwort.ToUpper())
+            FärbeButton(richtigeAntwort, "LightGreen");
+
+            if (gewaehlterBuchstabe != richtigeAntwort)
             {
-                MessageBox.Show("Richtig! Hervorragend.", "Ergebnis");
+                FärbeButton(gewaehlterBuchstabe, "Salmon"); 
             }
-            else
-            {
-                MessageBox.Show($"Falsch! Die richtige Antwort wäre {_aktuelleFrage.KorrekteAntwort} gewesen.", "Ergebnis");
-            }
+
+            await Task.Delay(2500);
+
+            HintergrundA = StandardGelb;
+            HintergrundB = StandardGelb;
+            HintergrundC = StandardGelb;
+            HintergrundD = StandardGelb;
+
+            _istEingabeGesperrt = false;
 
             _aktuelleFrageIndex++;
             ZeigeAktuelleFrage();
+        }
+
+        private void FärbeButton(string buchstabe, string farbe)
+        {
+            switch (buchstabe)
+            {
+                case "A": HintergrundA = farbe; break;
+                case "B": HintergrundB = farbe; break;
+                case "C": HintergrundC = farbe; break;
+                case "D": HintergrundD = farbe; break;
+            }
         }
 
         private void Beenden()

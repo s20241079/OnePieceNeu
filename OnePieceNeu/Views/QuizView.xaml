@@ -9,10 +9,10 @@
     <DockPanel>
         <TextBlock Name="Fragentext" Text="{Binding AktuellerFragentext}" TextAlignment="Center" FontWeight="DemiBold" Foreground="DarkRed" FontSize="30" Background="Transparent" DockPanel.Dock="Top" Height="80" Margin="0,30,0,20" TextWrapping="Wrap"/>
 
-        <Button Command="{Binding AntwortAuswaehlenCommand}" CommandParameter="A" Content="{Binding AntwortA}" Height="40" Width="400" FontSize="24" DockPanel.Dock="Top" Foreground="DarkRed" FontWeight="DemiBold" Margin="0,0,0,15" Background="#FFF1F19F" BorderBrush="DarkRed"></Button>
-        <Button Command="{Binding AntwortAuswaehlenCommand}" CommandParameter="B" Content="{Binding AntwortB}" Height="40" Width="400" FontSize="24" DockPanel.Dock="Top" Foreground="DarkRed" FontWeight="DemiBold" Margin="0,0,0,15" Background="#FFF1F19F" BorderBrush="DarkRed"></Button>
-        <Button Command="{Binding AntwortAuswaehlenCommand}" CommandParameter="C" Content="{Binding AntwortC}" Height="40" Width="400" FontSize="24" DockPanel.Dock="Top" Foreground="DarkRed" FontWeight="DemiBold" Margin="0,0,0,15" Background="#FFF1F19F" BorderBrush="DarkRed"></Button>
-        <Button Command="{Binding AntwortAuswaehlenCommand}" CommandParameter="D" Content="{Binding AntwortD}" Height="40" Width="400" FontSize="24" DockPanel.Dock="Top" Foreground="DarkRed" FontWeight="DemiBold" Margin="0,0,0,25" Background="#FFF1F19F" BorderBrush="DarkRed"></Button>
+        <Button Command="{Binding AntwortAuswaehlenCommand}" CommandParameter="A" Content="{Binding AntwortA}" Background="{Binding HintergrundA}" Height="40" Width="400" FontSize="24" DockPanel.Dock="Top" Foreground="DarkRed" FontWeight="DemiBold" Margin="0,0,0,15" BorderBrush="DarkRed"></Button>
+        <Button Command="{Binding AntwortAuswaehlenCommand}" CommandParameter="B" Content="{Binding AntwortB}" Background="{Binding HintergrundB}" Height="40" Width="400" FontSize="24" DockPanel.Dock="Top" Foreground="DarkRed" FontWeight="DemiBold" Margin="0,0,0,15" BorderBrush="DarkRed"></Button>
+        <Button Command="{Binding AntwortAuswaehlenCommand}" CommandParameter="C" Content="{Binding AntwortC}" Background="{Binding HintergrundC}" Height="40" Width="400" FontSize="24" DockPanel.Dock="Top" Foreground="DarkRed" FontWeight="DemiBold" Margin="0,0,0,15" BorderBrush="DarkRed"></Button>
+        <Button Command="{Binding AntwortAuswaehlenCommand}" CommandParameter="D" Content="{Binding AntwortD}" Background="{Binding HintergrundD}" Height="40" Width="400" FontSize="24" DockPanel.Dock="Top" Foreground="DarkRed" FontWeight="DemiBold" Margin="0,0,0,25" BorderBrush="DarkRed"></Button>
 
         <DockPanel DockPanel.Dock="Bottom" LastChildFill="False" Margin="0,0,0,30">
             <Button Command="{Binding BeendenCommand}" DockPanel.Dock="Left" BorderBrush="DarkRed" Background="#FFF1F19F" Foreground="DarkRed" FontWeight="DemiBold" FontSize="30" Margin="40,0,0,0" Content="Beenden" Height="50" Width="140" />
