@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OnePieceNeu.Models
+{
+    public class Bounty
+    {
+
+        public int Id { get; set; }
+
+        public string SpielerName { get; set; }
+
+        public int Score { get; set; }
+
+    }
+}

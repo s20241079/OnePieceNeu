@@ -18,6 +18,7 @@ namespace OnePieceNeu.ViewModels
         private MainViewModel _mainViewModel;
 
         public ICommand StartenCommand { get; }
+        public ICommand BountyCommand { get; } // Neu für die Bestenliste
         public ICommand BeendenCommand { get; }
 
         public StartViewModel(MainViewModel mainViewModel)
@@ -25,6 +26,7 @@ namespace OnePieceNeu.ViewModels
             _mainViewModel = mainViewModel;
 
             StartenCommand = new Common.ActionCommand(o => Starten(), o => true);
+            BountyCommand = new Common.ActionCommand(o => ZeigeBountyListe(), o => true); // Neu verknüpft
             BeendenCommand = new Common.ActionCommand(o => Beenden(), o => true);
 
             FragenImportieren();
@@ -33,6 +35,12 @@ namespace OnePieceNeu.ViewModels
         private void Starten()
         {
             _mainViewModel.CurrentView = new SchwierigkeitView(_mainViewModel);
+        }
+
+        private void ZeigeBountyListe()
+        {
+            // Vorläufiges Feedback, bis wir die BountyView gebaut haben
+            MessageBox.Show("Hier öffnet sich bald die Bounty-Liste der meistgesuchten Piraten!", "Kopfgeld-Büro");
         }
 
         private void Beenden()
@@ -44,10 +52,8 @@ namespace OnePieceNeu.ViewModels
         {
             using (var db = new QuizContext())
             {
-
                 if (!db.Fragen.Any())
                 {
-
                     string basisOrdner = AppDomain.CurrentDomain.BaseDirectory;
                     string dateiPfad = Path.Combine(basisOrdner, "fragen.txt");
 
@@ -77,7 +83,6 @@ namespace OnePieceNeu.ViewModels
                         }
                         db.SaveChanges();
                     }
-                 
                 }
             }
         }

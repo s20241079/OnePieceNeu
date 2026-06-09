@@ -12,6 +12,8 @@ namespace OnePieceNeu.Models
 
         public DbSet<Frage> Fragen { get; set; }
 
+        public DbSet<Bounty> Bounties { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -7,6 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <DockPanel>
+        <DockPanel.Background>
+            <ImageBrush ImageSource="/assets/OPBackground2.jpg" Stretch="UniformToFill" />
+        </DockPanel.Background>
         <TextBlock Name="Fragentext" Text="{Binding AktuellerFragentext}" TextAlignment="Center" FontWeight="DemiBold" Foreground="DarkRed" FontSize="30" Background="Transparent" DockPanel.Dock="Top" Height="80" Margin="0,30,0,20" TextWrapping="Wrap"/>
 
         <Button Command="{Binding AntwortAuswaehlenCommand}" CommandParameter="A" Content="{Binding AntwortA}" Background="{Binding HintergrundA}" Height="40" Width="400" FontSize="24" DockPanel.Dock="Top" Foreground="DarkRed" FontWeight="DemiBold" Margin="0,0,0,15" BorderBrush="DarkRed"></Button>
