@@ -5,42 +5,66 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OnePieceNeu.Views;
 using System.Windows.Input;
 
-namespace OnePieceNeu.Viewmodels
+namespace OnePieceNeu.ViewModels
 {
     public class SchwierigkeitViewModel : ViewModelBase
     {
         private MainViewModel _mainViewModel;
 
-        public bool IsLeichtSelected { get; set; } = true;
-        public bool IsMittelSelected { get; set; }
-        public bool IsSchwerSelected { get; set; }
+        // Die Bindings für deine RadioButtons aus dem XAML
+        private bool _isLeichtSelected = true; // Standardmäßig vorausgewählt
+        public bool IsLeichtSelected
+        {
+            get => _isLeichtSelected;
+            set { _isLeichtSelected = value; OnPropertyChanged(); }
+        }
 
-        public ICommand ZurückCommand { get; }
+        private bool _isMittelSelected;
+        public bool IsMittelSelected
+        {
+            get => _isMittelSelected;
+            set { _isMittelSelected = value; OnPropertyChanged(); }
+        }
+
+        private bool _isSchwerSelected;
+        public bool IsSchwerSelected
+        {
+            get => _isSchwerSelected;
+            set { _isSchwerSelected = value; OnPropertyChanged(); }
+        }
+
+        // Die Commands für deine Buttons unten
         public ICommand WeiterCommand { get; }
+        public ICommand ZurückCommand { get; }
 
         public SchwierigkeitViewModel(MainViewModel mainViewModel)
         {
             _mainViewModel = mainViewModel;
 
-            ZurückCommand = new Common.ActionCommand(o => Zurück(), o => true);
+            // Weiter- und Zurück-Buttons verknüpfen
             WeiterCommand = new Common.ActionCommand(o => Weiter(), o => true);
-        }
-
-        private void Zurück()
-        {
-            _mainViewModel.CurrentView = new StartView(_mainViewModel);
+            ZurückCommand = new Common.ActionCommand(o => Zurück(), o => true);
         }
 
         private void Weiter()
         {
-            string gewaehlteSchwierigkeit = "Leicht";
-            if (IsMittelSelected) gewaehlteSchwierigkeit = "Mittel";
-            if (IsSchwerSelected) gewaehlteSchwierigkeit = "Schwer";
+            string gewaehlteSchwierigkeit = "";
 
+            // Wir prüfen, welcher RadioButton aktiv ist
+            if (IsLeichtSelected) gewaehlteSchwierigkeit = "leicht";
+            else if (IsMittelSelected) gewaehlteSchwierigkeit = "mittel";
+            else if (IsSchwerSelected) gewaehlteSchwierigkeit = "schwer";
+
+            // Jetzt übergeben wir den ermittelten Text an die QuizView
             _mainViewModel.CurrentView = new QuizView(_mainViewModel, gewaehlteSchwierigkeit);
+        }
+
+        private void Zurück()
+        {
+            // Zurück zum Hauptmenü / Startbildschirm
+            _mainViewModel.CurrentView = new StartView(_mainViewModel);
         }
     }
 }

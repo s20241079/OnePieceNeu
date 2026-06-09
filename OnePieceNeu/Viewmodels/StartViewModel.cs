@@ -9,6 +9,7 @@ using System.Windows;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using OnePieceNeu.Models;
 using System.IO;
+using OnePieceNeu.Views;
 
 namespace OnePieceNeu.ViewModels
 {
@@ -31,6 +32,7 @@ namespace OnePieceNeu.ViewModels
 
         private void Starten()
         {
+            _mainViewModel.CurrentView = new SchwierigkeitView(_mainViewModel);
         }
 
         private void Beenden()
@@ -45,7 +47,9 @@ namespace OnePieceNeu.ViewModels
 
                 if (!db.Fragen.Any())
                 {
-                    string dateiPfad = "fragen.txt";
+
+                    string basisOrdner = AppDomain.CurrentDomain.BaseDirectory;
+                    string dateiPfad = Path.Combine(basisOrdner, "fragen.txt");
 
                     if (File.Exists(dateiPfad))
                     {
@@ -73,6 +77,7 @@ namespace OnePieceNeu.ViewModels
                         }
                         db.SaveChanges();
                     }
+                 
                 }
             }
         }
