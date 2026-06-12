@@ -54,6 +54,7 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Spielername" 
                                         Binding="{Binding SpielerName}" 
+                                        Foreground="DarkRed"
                                         Width="*" 
                                         FontWeight="DemiBold">
                         <DataGridTextColumn.ElementStyle>
@@ -69,7 +70,7 @@
                         <DataGridTextColumn.ElementStyle>
                             <Style TargetType="TextBlock">
                                 <Setter Property="HorizontalAlignment" Value="Center"/>
-                                <Setter Property="Foreground" Value="Black"/>
+                                <Setter Property="Foreground" Value="DarkRed"/>
                             </Style>
                         </DataGridTextColumn.ElementStyle>
                     </DataGridTextColumn>

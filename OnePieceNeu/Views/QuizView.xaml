@@ -19,6 +19,7 @@
 
         <DockPanel DockPanel.Dock="Bottom" LastChildFill="False" Margin="0,0,0,30">
             <Button Command="{Binding BeendenCommand}" DockPanel.Dock="Left" BorderBrush="DarkRed" Background="#FFF1F19F" Foreground="DarkRed" FontWeight="DemiBold" FontSize="30" Margin="40,0,0,0" Content="Beenden" Height="50" Width="140" />
+            
         </DockPanel>
     </DockPanel>
 </UserControl>

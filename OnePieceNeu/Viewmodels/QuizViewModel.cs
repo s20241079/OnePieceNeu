@@ -1,10 +1,12 @@
-﻿using System;
+﻿using OnePieceNeu.Models;
+using OnePieceNeu.Viewmodels;
+using OnePieceNeu.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Input;
-using OnePieceNeu.Models;
-using OnePieceNeu.Views;
+
 
 
 namespace OnePieceNeu.ViewModels
@@ -13,7 +15,7 @@ namespace OnePieceNeu.ViewModels
     {
         private MainViewModel _mainViewModel;
         private string _schwierigkeitsgrad;
-
+        private int _score = 0;
         private List<Frage> _gefilterteFragen;
         private int _aktuelleFrageIndex = 0;
         private Frage _aktuelleFrage = new Frage();
@@ -90,7 +92,7 @@ namespace OnePieceNeu.ViewModels
         {
             _mainViewModel = mainViewModel;
             _schwierigkeitsgrad = schwierigkeit;
-
+            _score = 0;
             AntwortAuswaehlenCommand = new Common.ActionCommand(parameter => AntwortGeklickt(parameter), o => true);
             BeendenCommand = new Common.ActionCommand(o => Beenden(), o => true);
 
@@ -127,6 +129,13 @@ namespace OnePieceNeu.ViewModels
                 AntwortC = _aktuelleFrage.AntwortC;
                 AntwortD = _aktuelleFrage.AntwortD;
             }
+            else
+            {
+                var _ErgebnisView = new ErgebnisView();
+                _ErgebnisView.DataContext = new ErgebnisViewModel(_mainViewModel, _score);
+                _mainViewModel.CurrentView = _ErgebnisView;
+
+            }
         }
 
         private async void AntwortGeklickt(object buchstabe)
@@ -144,8 +153,13 @@ namespace OnePieceNeu.ViewModels
             {
                 FärbeButton(gewaehlterBuchstabe, "Salmon"); 
             }
+            else
+            {
+                _score++;
+            }
 
-            await Task.Delay(2500);
+
+                await Task.Delay(100);
 
             HintergrundA = StandardGelb;
             HintergrundB = StandardGelb;
@@ -173,5 +187,6 @@ namespace OnePieceNeu.ViewModels
         {
             _mainViewModel.CurrentView = new StartView(_mainViewModel);
         }
+
     }
 }

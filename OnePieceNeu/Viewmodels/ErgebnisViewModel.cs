@@ -18,7 +18,7 @@ namespace OnePieceNeu.Viewmodels
 
         public string ErgebnisText => $"Du hast {_score} von 10 Punkten erreicht!";
 
-        private string _spielerName = "Luffy";
+        private string _spielerName = "";
         public string SpielerName
         {
             get => _spielerName;

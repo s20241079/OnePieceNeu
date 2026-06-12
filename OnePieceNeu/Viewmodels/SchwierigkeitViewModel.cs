@@ -13,8 +13,7 @@ namespace OnePieceNeu.ViewModels
     {
         private MainViewModel _mainViewModel;
 
-        // Die Bindings für deine RadioButtons aus dem XAML
-        private bool _isLeichtSelected = true; // Standardmäßig vorausgewählt
+        private bool _isLeichtSelected = true;
         public bool IsLeichtSelected
         {
             get => _isLeichtSelected;
@@ -35,7 +34,6 @@ namespace OnePieceNeu.ViewModels
             set { _isSchwerSelected = value; OnPropertyChanged(); }
         }
 
-        // Die Commands für deine Buttons unten
         public ICommand WeiterCommand { get; }
         public ICommand ZurückCommand { get; }
 
@@ -43,7 +41,6 @@ namespace OnePieceNeu.ViewModels
         {
             _mainViewModel = mainViewModel;
 
-            // Weiter- und Zurück-Buttons verknüpfen
             WeiterCommand = new Common.ActionCommand(o => Weiter(), o => true);
             ZurückCommand = new Common.ActionCommand(o => Zurück(), o => true);
         }
@@ -52,7 +49,6 @@ namespace OnePieceNeu.ViewModels
         {
             string gewaehlteSchwierigkeit = "";
 
-            // Wir prüfen, welcher RadioButton aktiv ist
             if (IsLeichtSelected) gewaehlteSchwierigkeit = "leicht";
             else if (IsMittelSelected) gewaehlteSchwierigkeit = "mittel";
             else if (IsSchwerSelected) gewaehlteSchwierigkeit = "schwer";

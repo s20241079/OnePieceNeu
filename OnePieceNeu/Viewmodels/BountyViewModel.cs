@@ -40,7 +40,7 @@ namespace OnePieceNeu.ViewModels
 
         private void Zurueck()
         {
-            _mainViewModel.CurrentView = new StartViewModel(_mainViewModel);
+            _mainViewModel.CurrentView = new StartView(_mainViewModel);
         }
     }
 }

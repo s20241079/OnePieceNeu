@@ -12,6 +12,7 @@ using System.Windows;
 using System.Windows.Input;
 using System.Windows.Shapes;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace OnePieceNeu.ViewModels
 {
@@ -41,7 +42,9 @@ namespace OnePieceNeu.ViewModels
 
         private void ZeigeBountyListe()
         {
-            _mainViewModel.CurrentView = new BountyViewModel(_mainViewModel);
+            var _BountyView = new BountyView();
+            _BountyView.DataContext = new BountyViewModel(_mainViewModel);
+            _mainViewModel.CurrentView = _BountyView;
         }
 
         private void Beenden()
