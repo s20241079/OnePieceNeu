@@ -19,7 +19,7 @@ namespace OnePieceNeu.ViewModels
         private MainViewModel _mainViewModel;
 
         public ICommand StartenCommand { get; }
-        public ICommand BountyCommand { get; } // Neu für die Bestenliste
+        public ICommand BountyCommand { get; } 
         public ICommand BeendenCommand { get; }
 
         public StartViewModel(MainViewModel mainViewModel)
@@ -52,6 +52,7 @@ namespace OnePieceNeu.ViewModels
         {
             using (var db = new QuizContext())
             {
+                db.Database.EnsureCreated();
                 if (!db.Fragen.Any())
                 {
                     string basisOrdner = AppDomain.CurrentDomain.BaseDirectory;

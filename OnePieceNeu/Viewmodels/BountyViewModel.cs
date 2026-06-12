@@ -16,7 +16,6 @@ namespace OnePieceNeu.ViewModels
     {
         private MainViewModel _mainViewModel;
 
-        // Die Liste für deine View
         public List<Bounty> BountyListe { get; set; }
 
         public ICommand ZurueckCommand { get; }
