@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Shapes;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace OnePieceNeu.ViewModels
@@ -56,7 +57,7 @@ namespace OnePieceNeu.ViewModels
                 if (!db.Fragen.Any())
                 {
                     string basisOrdner = AppDomain.CurrentDomain.BaseDirectory;
-                    string dateiPfad = Path.Combine(basisOrdner, "fragen.txt");
+                    string dateiPfad = @"C:\OnePieceNeu\OnePieceNeu\fagen.txt";
 
                     if (File.Exists(dateiPfad))
                     {

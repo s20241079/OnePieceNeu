@@ -16,7 +16,7 @@ namespace OnePieceNeu.ViewModels
 
         private List<Frage> _gefilterteFragen;
         private int _aktuelleFrageIndex = 0;
-        private Frage _aktuelleFrage;
+        private Frage _aktuelleFrage = new Frage();
 
         private const string StandardGelb = "#FFF1F19F";
 
@@ -24,7 +24,7 @@ namespace OnePieceNeu.ViewModels
 
         public string AktuellerFragentext
         {
-            get => _aktuelleFrage?.Fragentext;
+            get => _aktuelleFrage.Fragentext;
         }
 
         private string _antwortA;
