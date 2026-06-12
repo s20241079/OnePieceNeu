@@ -14,19 +14,16 @@
 
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="500">
 
-            <TextBlock Text="QUIZ BEENDET" FontSize="60" FontWeight="Bold" Foreground="DarkRed" 
+            <TextBlock Text="Quiz Beendet" FontSize="60" FontWeight="Bold" Foreground="DarkRed" 
                        HorizontalAlignment="Center" Margin="0,0,0,20">
-                <TextBlock.Effect>
-                    <DropShadowEffect BlurRadius="5" ShadowDepth="2" Color="Black"/>
-                </TextBlock.Effect>
             </TextBlock>
 
             <TextBlock Text="{Binding ErgebnisText}" FontSize="30" Foreground="Black" 
                        HorizontalAlignment="Center" Margin="0,0,0,40"/>
 
-            <TextBlock Text="Trage deinen Namen in die Highscore-Liste ein:" FontSize="18" Margin="0,0,0,5"/>
+            <TextBlock Text="Trage deinen Namen in die Highscore-Liste ein:" FontSize="18"  Foreground="DarkRed" Margin="0,0,0,5"/>
             <TextBox Text="{Binding SpielerName, UpdateSourceTrigger=PropertyChanged}" 
-                     FontSize="24" Height="45" VerticalContentAlignment="Center" 
+                     FontSize="24" Height="45" VerticalContentAlignment="Center" Background="#FFF1F19F"
                      Margin="0,0,0,20" TextAlignment="Center"/>
 
             <Button Command="{Binding SpeichernUndHighscoreCommand}" 

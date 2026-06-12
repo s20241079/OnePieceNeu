@@ -14,6 +14,11 @@ namespace OnePieceNeu.Database
 
         public DbSet<Bounty> Bounties { get; set; }
 
+        public QuizDbContext()
+        {
+
+            this.Database.EnsureCreated();
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Data Source=quiz.db");

@@ -17,9 +17,10 @@ namespace OnePieceNeu.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            string ordnerPfad = AppDomain.CurrentDomain.BaseDirectory;
+            string datenbankPfad = System.IO.Path.Combine(ordnerPfad, "quiz.db");
 
-            string dbPfad = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "onepiecequiz.db");
-            optionsBuilder.UseSqlite($"Data Source={dbPfad}");
+            optionsBuilder.UseSqlite($"Data Source={datenbankPfad}");
         }
     }
 }

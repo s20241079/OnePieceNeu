@@ -1,15 +1,16 @@
 ﻿using OnePieceNeu.Common;
+using OnePieceNeu.Models;
+using OnePieceNeu.Viewmodels;
+using OnePieceNeu.Views;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
 using System.Windows;
+using System.Windows.Input;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
-using OnePieceNeu.Models;
-using System.IO;
-using OnePieceNeu.Views;
 
 namespace OnePieceNeu.ViewModels
 {
@@ -26,7 +27,7 @@ namespace OnePieceNeu.ViewModels
             _mainViewModel = mainViewModel;
 
             StartenCommand = new Common.ActionCommand(o => Starten(), o => true);
-            BountyCommand = new Common.ActionCommand(o => ZeigeBountyListe(), o => true); // Neu verknüpft
+            BountyCommand = new Common.ActionCommand(o => ZeigeBountyListe(), o => true);
             BeendenCommand = new Common.ActionCommand(o => Beenden(), o => true);
 
             FragenImportieren();
@@ -39,8 +40,7 @@ namespace OnePieceNeu.ViewModels
 
         private void ZeigeBountyListe()
         {
-            // Vorläufiges Feedback, bis wir die BountyView gebaut haben
-            MessageBox.Show("Hier öffnet sich bald die Bounty-Liste der meistgesuchten Piraten!", "Kopfgeld-Büro");
+            _mainViewModel.CurrentView = new BountyViewModel(_mainViewModel);
         }
 
         private void Beenden()

@@ -9,7 +9,7 @@
 
     <StackPanel>
         <StackPanel.Background>
-            <ImageBrush ImageSource="/assets/OPBackground.jpg" Stretch="UniformToFill" />
+           <ImageBrush ImageSource="/Assets/OPBackground.jpg" Stretch="UniformToFill" />
         </StackPanel.Background>
         <TextBox Name="Header" Text="One Piece Quiz" BorderBrush="Transparent" Foreground="DarkRed" FontSize="50" FontWeight="Bold" TextAlignment="Center" Width="800" Height="104" HorizontalAlignment="Center" Background="Transparent" />
         <Button Command="{Binding StartenCommand}" Content="Start" FontWeight="DemiBold" BorderBrush="DarkRed" Background="#FFF1F19F" Foreground="DarkRed" FontSize="30" Margin="0,0,0,30" Height="70" Width="200"> </Button>
