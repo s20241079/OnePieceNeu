@@ -53,13 +53,11 @@ namespace OnePieceNeu.ViewModels
             else if (IsMittelSelected) gewaehlteSchwierigkeit = "mittel";
             else if (IsSchwerSelected) gewaehlteSchwierigkeit = "schwer";
 
-            // Jetzt übergeben wir den ermittelten Text an die QuizView
             _mainViewModel.CurrentView = new QuizView(_mainViewModel, gewaehlteSchwierigkeit);
         }
 
         private void Zurück()
         {
-            // Zurück zum Hauptmenü / Startbildschirm
             _mainViewModel.CurrentView = new StartView(_mainViewModel);
         }
     }

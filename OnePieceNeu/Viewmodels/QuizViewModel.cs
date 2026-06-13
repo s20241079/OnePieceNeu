@@ -119,7 +119,7 @@ namespace OnePieceNeu.ViewModels
 
         private void ZeigeAktuelleFrage()
         {
-            if (_aktuelleFrageIndex < _gefilterteFragen.Count)
+            if (_aktuelleFrageIndex < 10)
             {
                 _aktuelleFrage = _gefilterteFragen[_aktuelleFrageIndex];
 
@@ -140,7 +140,7 @@ namespace OnePieceNeu.ViewModels
 
         private async void AntwortGeklickt(object buchstabe)
         {
-            if (_aktuelleFrage == null || buchstabe == null || _istEingabeGesperrt) return;
+            if (_istEingabeGesperrt) return;
 
             _istEingabeGesperrt = true;
 
@@ -159,7 +159,7 @@ namespace OnePieceNeu.ViewModels
             }
 
 
-                await Task.Delay(100);
+                await Task.Delay(2500);
 
             HintergrundA = StandardGelb;
             HintergrundB = StandardGelb;
