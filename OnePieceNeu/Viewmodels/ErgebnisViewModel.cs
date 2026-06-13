@@ -56,7 +56,6 @@ namespace OnePieceNeu.Viewmodels
                 db.SaveChanges();
             }
 
-            System.Windows.MessageBox.Show("Dein Score wurde erfolgreich in der Bounty-Liste eingetragen!");
 
             _mainViewModel.CurrentView = new StartView(_mainViewModel);
         }

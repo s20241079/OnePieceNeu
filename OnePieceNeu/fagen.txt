@@ -1,49 +1,49 @@
-Welche Teufelskraft besitzt Nico Robin?;Blüten-Blüten-Frucht;Schatten-Schatten-Frucht;Liebe-Liebe-Frucht;Seelen-Seelen-Frucht;A;leicht
-Wie viele Schwerter führt Roronoa Zoro normalerweise?;Drei;Eins;Zwei;Vier;A;leicht
-Welchen Beruf hatte Franky vor seinem Beitritt zur Crew?;Schiffszimmermann;Mechaniker;Pirat;Kopfgeldjäger;A;leicht
+Welche Teufelskraft besitzt Nico Robin?;Liebe-Liebe-Frucht;Schatten-Schatten-Frucht;Blüten-Blüten-Frucht;Seelen-Seelen-Frucht;C;leicht
+Wie viele Schwerter führt Roronoa Zoro normalerweise?;Eins;Drei;Zwei;Vier;B;leicht
+Welchen Beruf hatte Franky vor seinem Beitritt zur Crew?;Kopfgeldjäger;Mechaniker;Pirat;Schiffszimmermann;D;leicht
 Wer ist der Vater von Monkey D. Luffy?;Monkey D. Dragon;Gol D. Roger;Whitebeard;Sengoku;A;leicht
-Auf welcher Insel trafen die Strohhüte zum ersten Mal Chopper?;Drum Island;Alabasta;Skypia;Water 7;A;leicht
+Auf welcher Insel trafen die Strohhüte zum ersten Mal Chopper?;Alabasta;Drum Island;Skypia;Water 7;A;leicht
 Welche Farbe hat Brooks Afro?;Schwarz;Blond;Braun;Weiß;A;leicht
 Wie heißt Usopps Heimatdorf?;Syrup Village;Cocoyasi Village;Fuchsia Village;Goa Kingdom;A;leicht
-Welche Teufelskraft hat Smoker?;Rauch-Rauch-Frucht ;Feuer-Feuer-Frucht;Eis-Eis-Frucht;Magma-Magma-Frucht;A;leicht
-Wer war der erste Strohhut, der Luffy beitrat?;Roronoa Zoro;Nami;Usopp;Sanji;A;leicht
-Welches Tier begleitet Shanks oft?;Affe;Papagei;Hund;Katze;A;leicht
+Welche Teufelskraft hat Smoker?;Magma-Magma-Frucht;Feuer-Feuer-Frucht;Eis-Eis-Frucht;Rauch-Rauch-Frucht;D;leicht
+Wer war der erste Strohhut, der Luffy beitrat?;Nami;Roronoa Zoro;Usopp;Sanji;B;leicht
+Welches Tier begleitet Shanks oft?;Hund;Papagei;Affe;Katze;C;leicht
 Wie heißt der Cyborg der Strohhut-Piraten?;Franky;Cutty Flam;Tom;Iceburg;A;leicht
-Welche Waffe benutzt Usopp hauptsächlich?;Schleuder;Gewehr;Schwert;Hammer;A;leicht
-In welchem Meer startete Luffy seine Reise?;East Blue;West Blue;North Blue;South Blue;A;leicht
-Wer ist der Schiffsarzt der Strohhut-Piraten?;Tony Tony Chopper;Nico Robin;Nami;Brook;A;leicht
-Welche Kampfkunst praktiziert Sanji?;Black Leg Style;Fishman Karate;Rokushiki;Hasshoken;A;leicht
-Wie nennt man die stärksten Piraten der Welt?;Yonko;Shichibukai;Supernova;Worst Generation;A;leicht
-Welches Instrument spielt Brook?;Violine;Gitarre;Klavier;Flöte;A;leicht
+Welche Waffe benutzt Usopp hauptsächlich?;Schwert;Gewehr;Schleuder;Hammer;C;leicht
+In welchem Meer startete Luffy seine Reise?;South Blue;West Blue;North Blue;East Blue;D;leicht
+Wer ist der Schiffsarzt der Strohhut-Piraten?;Brook;Nico Robin;Nami;Tony Tony Chopper;D;leicht
+Welche Kampfkunst praktiziert Sanji?;Fishman Karate;Black Leg Style;Rokushiki;Hasshoken;B;leicht
+Wie nennt man die stärksten Piraten der Welt?;Supernova;Shichibukai;Yonko;Worst Generation;C;leicht
+Welches Instrument spielt Brook?;Gitarre;Violine;Klavier;Flöte;B;leicht
 Wer führte die Baroque Works Organisation?;Crocodile;Doflamingo;Moria;Kuma;A;leicht
-Wie heißt Namis Heimatinsel?;Cocoyasi Village ;Weatheria;Orange Town;Loguetown;A;leicht
-Welche Eigenschaft macht Jinbe besonders?;Er ist ein Fishman;Er ist ein Riese;Er ist ein Cyborg;Er ist ein Mink;A;leicht
+Wie heißt Namis Heimatinsel?;LogueTown;Weatheria;Orange Town;Cocoyasi Village;D;leicht
+Welche Eigenschaft macht Jinbe besonders?;Er ist ein Mink;Er ist ein Riese;Er ist ein Cyborg;Er ist ein Fishman;D;leicht
 Wie hoch war Luffys erstes Kopfgeld?;30.000.000 Berry;50.000.000 Berry;100.000.000 Berry;150.000.000 Berry;A;mittel
-Welcher Admiral hat die Magma-Magma-Frucht?;Akainu;Aokiji;Kizaru;Fujitora;A;mittel
-Wer ist der Kapitän der Heart Pirates?;Trafalgar Law;Eustass Kid;Basil Hawkins;X Drake;A;mittel
+Welcher Admiral hat die Magma-Magma-Frucht?;Kizaru;Aokiji;Akainu;Fujitora;C;mittel
+Wer ist der Kapitän der Heart Pirates?;X Drake;Eustass Kid;Basil Hawkins;Trafalgar Law;D;mittel
 Wie hoch ist Zoros Kopfgeld nach Enies Lobby?;120.000.000 Berry;177.000.000 Berry;83.000.000 Berry;200.000.000 Berry;A;mittel
-Welche Teufelskraft besitzt Bartholomew Kuma?;Tatzen-Tatzen-Frucht;Schatten-Schatten-Frucht;Durchsichtig-Durchsichtig-Frucht;Beben-Beben-Frucht;A;mittel
-Wie heißt die Technik, mit der Luffy seine Arme aufpumpt?;Gear 3rd;Gear 2nd;Gear 4th;Gomu Gomu no Bazooka;A;mittel
+Welche Teufelskraft besitzt Bartholomew Kuma?;Durchsichtig-Durchsichtig-Frucht;Schatten-Schatten-Frucht;Tatzen-Tatzen-Frucht;Beben-Beben-Frucht;C;mittel
+Wie heißt die Technik, mit der Luffy seine Arme aufpumpt?;Gear 2nd;Gear 3rd;Gear 4th;Gomu Gomu no Bazooka;B;mittel
 Welcher Shichibukai kann Schatten stehlen?;Gecko Moria;Crocodile;Doflamingo;Hancock;A;mittel
-Wie heißt die Hauptstadt von Alabasta?;Alubarna;Nanohana;Yuba;Rainbase;A;mittel
-Welche Nummer trägt Sanji auf seinem Raid Suit?;03;01;66;04;A;mittel
-Wer ist der Vize-Admiral, der Luffy seit der Kindheit verfolgt?;Monkey D. Garp;Tsuru;Momonga;Smoker;A;mittel
-Welche Insel liegt 10.000 Meter über dem Meer?;Skypia;Fishman Island;Punk Hazard;Zou;A;mittel
+Wie heißt die Hauptstadt von Alabasta?;Rainbase;Nanohana;Yuba;Alubarna;D;mittel
+Welche Nummer trägt Sanji auf seinem Raid Suit?;04;01;66;03;D;mittel
+Wer ist der Vize-Admiral, der Luffy seit der Kindheit verfolgt?;Tsuru;Monkey D. Garp;Momonga;Smoker;B;mittel
+Welche Insel liegt 10.000 Meter über dem Meer?;Zou;Fishman Island;Punk Hazard;Skypia;D;mittel
 Wie nennt man die Währung in der One Piece Welt?;Berry;Beli;Gold;Treasure;A;mittel
-Welcher Charakter kann sich in einen Leoparden verwandeln?;Rob Lucci;Jabra;Kaku;Blueno;A;mittel
-Wer wird nach Whole Cake Island als "5. Yonko" bezeichnet?;Monkey D. Luffy ;Trafalgar Law;Eustass Kid; Marshall D. Teach;A;mittel
-Welche Teufelskraft hat Charlotte Linlin (Big Mom)?;Seelen-Seelen-Frucht;Liebe-Liebe-Frucht;Süß-Süß-Frucht;Keks-Keks-Frucht;A;mittel
+Welcher Charakter kann sich in einen Leoparden verwandeln?;Jabra;Rob Lucci;Kaku;Blueno;B;mittel
+Wer wird nach Whole Cake Island als "5. Yonko" bezeichnet?;Marshall D. Teach;Trafalgar Law;Eustass Kid;Monkey D. Luffy;D;mittel
+Welche Teufelskraft hat Charlotte Linlin (Big Mom)?;Süß-Süß-Frucht;Liebe-Liebe-Frucht;Seelen-Seelen-Frucht;Keks-Keks-Frucht;C;mittel
 Wie heißt Laws Schwert?;Kikoku;Shusui;Enma;Sandai Kitetsu;A;mittel
-Welcher CP9 Agent kann Türen erschaffen?;Blueno;Kalifa;Kumadori;Fukurou;A;mittel
-Wer ist der Schöpfer der Pacifista?;Dr. Vegapunk ;Caesar Clown;Vinsmoke Judge;Queen;A;mittel
-Welche Kampftechnik lernte Luffy auf Rusukaina?;Gear 4th;Soru;Fishman Karate;Rokougan;A;mittel
-Wie hoch ist Luffys Kopfgeld nach dem Wano Arc?;3.000.000.000 Berry;2.500.000.000 Berry;4.000.000.000 Berry;1.500.000.000 Berry;A;schwer
-Welcher Name wird für Luffys erwachte Teufelskraft verwendet?;Hito Hito no Mi Model: Nika ;Gomu Gomu no Mi Awakened;Sun God Luffy Form;Gear 5th Ultimate;A;schwer
-Wie heißt die Technik, die Zoro von Mihawk lernte?;Nichts spezifisch benannt, aber Haki-Training ;Kokuto Techniken;Yoru Style;Black Blade Mastery;A;schwer
+Welcher CP9 Agent kann Türen erschaffen?;Kumadori;Kalifa;Blueno;Fukurou;C;mittel
+Wer ist der Schöpfer der Pacifista?;Queen;Caesar Clown;Vinsmoke Judge;Dr. Vegapunk;D;mittel
+Welche Kampftechnik lernte Luffy auf Rusukaina?;Soru;Gear 4th;Fishman Karate;Rokougan;A;mittel
+Wie hoch ist Luffys Kopfgeld nach dem Wano Arc?;1.500.000.000 Berry;2.500.000.000 Berry;4.000.000.000 Berry;3.000.000.000 Berry;D;schwer
+Welcher Name wird für Luffys erwachte Teufelskraft verwendet?;Sun God Luffy Form;Gomu Gomu no Mi Awakened;Hito Hito no Mi Model: Nika;Gear 5th Ultimate;C;schwer
+Wie heißt die Technik, die Zoro von Mihawk lernte?;Kokuto Techniken;Nichts spezifisch benannt, aber Haki-Training;Yoru Style;Black Blade Mastery;B;schwer
 Welcher Tobi Roppo war ein ehemaliger Marine-Kapitän?;X Drake;Page One;Ulti;Sasaki;A;schwer
-Wie lautet der wahre Name der "Gum-Gum-Frucht"?;Hito Hito no Mi Model: Nika;Gomu Gomu no Mi;Sun Sun no Mi;Liberation Liberation no Mi;A;schwer
+Wie lautet der wahre Name der "Gum-Gum-Frucht"?;Liberation Liberation no Mi;Gomu Gomu no Mi;Sun Sun no Mi;Hito Hito no Mi Model: Nika;D;schwer
 Welche Verbindung hat Yamato zu Ace?;Sie waren Freunde;Sie waren Geschwister;Sie waren Rivalen;Sie kämpften gegeneinander;A;schwer
-Wer erschuf die künstlichen Teufelsfrüchte (SMILE)?;Caesar Clown;Dr. Vegapunk;Vinsmoke Judge;Doflamingo;A;schwer
-Welcher Samurai opferte sich, um Momonosuke zu retten?;Kozuki Oden;Ashura Doji;Izo;Kinemon;A;schwer
+Wer erschuf die künstlichen Teufelsfrüchte (SMILE)?;Vinsmoke Judge;Dr. Vegapunk;Caesar Clown;Doflamingo;C;schwer
+Welcher Samurai opferte sich, um Momonosuke zu retten?;Ashura Doji;Kozuki Oden;Izo;Kinemon;B;schwer
 Wer tötet Kurozumi Orochi endgültig?;Denjiro;Kaido;Hiyori;Zoro;A;schwer
-Welche Technik benutzte Luffy, um Kaido zum ersten Mal ernsthaft zu verletzen?;Red Roc;Gomu Gomu no Kong Gatling;Gear 4: Leo Bazooka;Gomu Gomu no Elephant Gun;A;schwer
+Welche Technik benutzte Luffy, um Kaido zum ersten Mal ernsthaft zu verletzen?;Gomu Gomu no Elephant Gun;Gomu Gomu no Kong Gatling;Gear 4: Leo Bazooka;Red Roc;D;schwer
